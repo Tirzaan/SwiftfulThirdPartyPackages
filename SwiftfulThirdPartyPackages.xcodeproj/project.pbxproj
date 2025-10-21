@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9976C4A82EA80C7100EE8B0F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C4A72EA80C7100EE8B0F /* SDWebImageSwiftUI */; };
 		9976C4B52EA81D3000EE8B0F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C4B42EA81D3000EE8B0F /* Kingfisher */; };
+		9976C4BD2EA8294D00EE8B0F /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C4BC2EA8294D00EE8B0F /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9976C4BD2EA8294D00EE8B0F /* KeychainSwift in Frameworks */,
 				9976C4B52EA81D3000EE8B0F /* Kingfisher in Frameworks */,
 				9976C4A82EA80C7100EE8B0F /* SDWebImageSwiftUI in Frameworks */,
 			);
@@ -74,6 +76,7 @@
 			packageProductDependencies = (
 				9976C4A72EA80C7100EE8B0F /* SDWebImageSwiftUI */,
 				9976C4B42EA81D3000EE8B0F /* Kingfisher */,
+				9976C4BC2EA8294D00EE8B0F /* KeychainSwift */,
 			);
 			productName = SwiftfulThirdPartyPackages;
 			productReference = 9976C4982EA80B0200EE8B0F /* SwiftfulThirdPartyPackages.app */;
@@ -106,6 +109,7 @@
 			packageReferences = (
 				9976C4A62EA80C7100EE8B0F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				9976C4B32EA81D3000EE8B0F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9976C4BB2EA8294D00EE8B0F /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9976C4992EA80B0200EE8B0F /* Products */;
@@ -363,6 +367,14 @@
 				minimumVersion = 8.6.0;
 			};
 		};
+		9976C4BB2EA8294D00EE8B0F /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -375,6 +387,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9976C4B32EA81D3000EE8B0F /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		9976C4BC2EA8294D00EE8B0F /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9976C4BB2EA8294D00EE8B0F /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
