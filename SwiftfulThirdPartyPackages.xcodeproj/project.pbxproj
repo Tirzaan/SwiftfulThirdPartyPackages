@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9976C4A82EA80C7100EE8B0F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C4A72EA80C7100EE8B0F /* SDWebImageSwiftUI */; };
+		9976C4B52EA81D3000EE8B0F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C4B42EA81D3000EE8B0F /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9976C4B52EA81D3000EE8B0F /* Kingfisher in Frameworks */,
 				9976C4A82EA80C7100EE8B0F /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +73,7 @@
 			name = SwiftfulThirdPartyPackages;
 			packageProductDependencies = (
 				9976C4A72EA80C7100EE8B0F /* SDWebImageSwiftUI */,
+				9976C4B42EA81D3000EE8B0F /* Kingfisher */,
 			);
 			productName = SwiftfulThirdPartyPackages;
 			productReference = 9976C4982EA80B0200EE8B0F /* SwiftfulThirdPartyPackages.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				9976C4A62EA80C7100EE8B0F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				9976C4B32EA81D3000EE8B0F /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9976C4992EA80B0200EE8B0F /* Products */;
@@ -351,6 +355,14 @@
 				minimumVersion = 3.1.3;
 			};
 		};
+		9976C4B32EA81D3000EE8B0F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -358,6 +370,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9976C4A62EA80C7100EE8B0F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		9976C4B42EA81D3000EE8B0F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9976C4B32EA81D3000EE8B0F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -12,13 +12,20 @@ import SDWebImageSwiftUI
 struct ImageLoader: View {
     let url: String
     let aspectRatioMode: ContentMode
+    let useSDWebImage: Bool
 
     var body: some View {
         Rectangle()
             .opacity(0.1)
             .overlay {
-                SDWebImageLoader(url: url, aspectRatioMode: aspectRatioMode)
-                    .allowsHitTesting(false)
+                if useSDWebImage {
+                    SDWebImageLoader(url: url, aspectRatioMode: aspectRatioMode)
+                        .allowsHitTesting(false)
+                } else {
+                    KingfisherImageLoader(url: url, aspectRatioMode: aspectRatioMode)
+                        .allowsHitTesting(false)
+                }
+                
             }
             .clipped()
     }
@@ -27,6 +34,7 @@ struct ImageLoader: View {
 #Preview {
     ImageLoader(
         url: "https://picsum.photos/id/237/200/300",
-        aspectRatioMode: .fill
+        aspectRatioMode: .fill,
+        useSDWebImage: true
     )
 }

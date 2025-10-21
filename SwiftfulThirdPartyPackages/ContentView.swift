@@ -11,8 +11,8 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                NavigationLink("SD Web Image") { SDWebImage() }
-                NavigationLink("") { EmptyView() }
+                NavigationLink("SDWebImage") { SDWebImage() }
+                NavigationLink("Kingfisher") { Kingfisher() }
                 NavigationLink("") { EmptyView() }
                 NavigationLink("") { EmptyView() }
                 NavigationLink("") { EmptyView() }

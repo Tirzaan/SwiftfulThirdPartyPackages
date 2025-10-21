@@ -39,12 +39,13 @@ struct SDWebImage: View {
     var body: some View {
         ImageLoader(
             url: "https://picsum.photos/id/237/200/300",
-            aspectRatioMode: .fill
+            aspectRatioMode: .fill,
+            useSDWebImage: true
         )
         .frame(width: 300, height: 300)
         .onAppear {
             guard let url = URL(string: "https://picsum.photos/id/237/200/300") else { return }
-            ImagePrefetcher.intstance.startPrefetching(urls: [url])
+            SDImagePrefetcher.instance.startPrefetching(urls: [url])
         }
     }
 }
