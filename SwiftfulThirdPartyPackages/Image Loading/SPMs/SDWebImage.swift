@@ -8,22 +8,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct ImageLoader: View {
-    let url: String
-    let aspectRatioMode: ContentMode
-
-    var body: some View {
-        Rectangle()
-            .opacity(0.1)
-            .overlay {
-                SDWebImageLoader(url: url, aspectRatioMode: aspectRatioMode)
-                    .allowsHitTesting(false)
-            }
-            .clipped()
-    }
-}
-
-fileprivate struct SDWebImageLoader: View {
+struct SDWebImageLoader: View {
     let url: String
     let aspectRatioMode: ContentMode
 
@@ -47,21 +32,6 @@ fileprivate struct SDWebImageLoader: View {
         }
         .indicator(.activity)
         .aspectRatio(contentMode: aspectRatioMode)
-    }
-}
-
-final class ImagePrefetcher {
-    static let intstance = ImagePrefetcher()
-    private let prefetcher = SDWebImagePrefetcher()
-    
-    private init() { }
-    
-    func startPrefetching(urls: [URL]?) {
-        prefetcher.prefetchURLs(urls)
-    }
-    
-    func stopPrefetching() {
-        prefetcher.cancelPrefetching()
     }
 }
 
