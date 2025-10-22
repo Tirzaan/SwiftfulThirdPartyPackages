@@ -16,7 +16,7 @@ struct ContentView: View {
                 NavigationLink("Keychain-Swift") { KeychainSwiftView() }
                 NavigationLink("Swiftful UI") { SwiftfulUIView() }
                 NavigationLink("Swiftful Routing") { SwiftfulRoutingView() }
-                NavigationLink("") { EmptyView() }
+                NavigationLink("Lottie") { LottieAnimView() }
                 NavigationLink("") { EmptyView() }
             }
             .navigationTitle("Third Party Packages")
