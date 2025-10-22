@@ -15,7 +15,7 @@ struct ContentView: View {
                 NavigationLink("Kingfisher") { Kingfisher() }
                 NavigationLink("Keychain-Swift") { KeychainSwiftView() }
                 NavigationLink("Swiftful UI") { SwiftfulUIView() }
-                NavigationLink("") { EmptyView() }
+                NavigationLink("Swiftful Routing") { SwiftfulRoutingView() }
                 NavigationLink("") { EmptyView() }
                 NavigationLink("") { EmptyView() }
             }

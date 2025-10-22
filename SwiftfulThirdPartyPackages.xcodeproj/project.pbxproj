@@ -11,6 +11,7 @@
 		9976C4B52EA81D3000EE8B0F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C4B42EA81D3000EE8B0F /* Kingfisher */; };
 		9976C4BD2EA8294D00EE8B0F /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C4BC2EA8294D00EE8B0F /* KeychainSwift */; };
 		9976C4C32EA8361500EE8B0F /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C4C22EA8361500EE8B0F /* SwiftfulUI */; };
+		9976C4C82EA88D3200EE8B0F /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C4C72EA88D3200EE8B0F /* SwiftfulRouting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 				9976C4BD2EA8294D00EE8B0F /* KeychainSwift in Frameworks */,
 				9976C4B52EA81D3000EE8B0F /* Kingfisher in Frameworks */,
 				9976C4A82EA80C7100EE8B0F /* SDWebImageSwiftUI in Frameworks */,
+				9976C4C82EA88D3200EE8B0F /* SwiftfulRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,7 @@
 				9976C4B42EA81D3000EE8B0F /* Kingfisher */,
 				9976C4BC2EA8294D00EE8B0F /* KeychainSwift */,
 				9976C4C22EA8361500EE8B0F /* SwiftfulUI */,
+				9976C4C72EA88D3200EE8B0F /* SwiftfulRouting */,
 			);
 			productName = SwiftfulThirdPartyPackages;
 			productReference = 9976C4982EA80B0200EE8B0F /* SwiftfulThirdPartyPackages.app */;
@@ -114,6 +117,7 @@
 				9976C4B32EA81D3000EE8B0F /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				9976C4BB2EA8294D00EE8B0F /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				9976C4C12EA8361500EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+				9976C4C62EA88D3200EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9976C4992EA80B0200EE8B0F /* Products */;
@@ -387,6 +391,14 @@
 				minimumVersion = 1.2.0;
 			};
 		};
+		9976C4C62EA88D3200EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.8;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -409,6 +421,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9976C4C12EA8361500EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
 			productName = SwiftfulUI;
+		};
+		9976C4C72EA88D3200EE8B0F /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9976C4C62EA88D3200EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
